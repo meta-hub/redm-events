@@ -4,6 +4,11 @@ A script to simplify the use of events in RedM.
 Probably a "developer resource".  
 Documentation will remain vague, read the code for more information.  
 
+# Requirements
+
+Download the dataview.lua file found [here](https://github.com/gottfriedleibniz/lua/blob/luaglm/libs/scripts/examples/dataview.lua) and add it to this resource.
+The fxmanifest.lua already expects this file.
+
 # Usage
 
 You can either use the exports as-needed (don't use per-frame due to export performance hit) or reference the api directly through your resources fxmanifest.lua, e.g:
