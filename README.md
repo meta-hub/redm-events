@@ -45,3 +45,7 @@ Citizen.CreateThread(function()
   end
 end)
 ```
+
+# Credits
+
+[GottfriedLeibniz](https://github.com/gottfriedleibniz), for the dataview.lua script.
