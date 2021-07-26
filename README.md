@@ -1,8 +1,8 @@
 # redm-events
 
-A script to simplify the use of events in RedM.
-Probably a "developer resource".
-Documentation will remain vague, read the code for more information.
+A script to simplify the use of events in RedM.  
+Probably a "developer resource".  
+Documentation will remain vague, read the code for more information.  
 
 # Usage
 
@@ -48,4 +48,5 @@ end)
 
 # Credits
 
-[GottfriedLeibniz](https://github.com/gottfriedleibniz), for the dataview.lua script.
+[GottfriedLeibniz](https://github.com/gottfriedleibniz), for the dataview.lua script.  
+[femga](https://github.com/femga), for the [rdr3_dicoveries](rdr3_discoveries/tree/master/AI/EVENTS) repository.
