@@ -39,7 +39,7 @@ end)
 
 -- with exports:
 Citizen.CreateThread(function()
-  local isLooting = exports.events:getEventData("EVENT_LOOT_COMPLETE")
+  local isLooting = exports['redm-events']:getEventData("EVENT_LOOT_COMPLETE")
   if isLooting then
     print(isLooting["Looted entity id"],isLooting[2]) -- > 30481234 30481234
   end
