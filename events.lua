@@ -1738,8 +1738,8 @@ local eventData = {
     eventGroup = 0,
     eventDataSize = 2,
     dataElements = {
-      [0] = "entity id, requesting prompt info",
-      [1] = "inventory item hash"
+      [0] = "iEntity",
+      [1] = "eUnkInventoryItem"
     }
   },
   {
@@ -3164,6 +3164,25 @@ end
 -- global return in-game event data from event name.
 events.getEventData = function(eventName)
   return getEventData(eventName)
+end
+
+events.listenForAnyEvents = function(ignored)
+  local size = GetNumberOfEvents(0)
+
+  local ignoreLookup = {}
+
+  for _,str in ipairs(ignored) do
+    ignoreLookup[str] = true
+  end
+
+  for i=0,size-1 do
+    local eventAtIndex = GetEventAtIndex(eventGroup,i)
+    local name = (getEventNameFromHash(eventAtIndex) or eventAtIndex)
+    
+    if not ignoreLookup[name] then
+      print('Event active: ' .. name)
+    end
+  end
 end
 
 -- thread to update tick/frame count.
